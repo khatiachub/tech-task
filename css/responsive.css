@@ -1,0 +1,94 @@
+@media(max-width:1007px){
+    .divwraper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .wraperbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:800px){
+    .formdiv{
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .imgdiv{
+        max-width: 800px;
+        width: 100%;
+    }
+}
+@media(max-width:640px){
+    .footerdiv1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .divblock-p{
+        margin-left: 0px;
+    }
+    .divblock{
+        margin-top: 30px;
+    }
+    .footer-div{
+        height: auto;
+    }
+    .social-divblock{
+        max-width: 330px;
+        width: 100%;
+    }
+    .form{
+        margin-left: 5px;
+    }
+    .wraperblock{
+        max-width: 260px;
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+    .service-div{
+        width: 180px;
+    }
+    .overlay{
+        padding: 10px 0px 10px 0px;
+    }
+    .descr{
+        margin-left: 10px;
+    }
+    .imagepost{
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    .tittle{
+        margin-left: 10px;
+        width: 250px;
+    }
+    .formdiv{
+        left: 50%;
+        transform: translate(-50%);
+        max-width: 270px;
+        width: 100%;
+    }
+    .textarea{
+        max-width: 230px;
+        width: 100%;
+    }
+    .service-block{
+        max-width: 250px;
+        width: 100%;
+    }
+    .wraper{
+        max-width: 270px;
+        width: 100%;
+    }
+    
+    
+}

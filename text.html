@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"content="" />
+    <meta property="og:type"content="article" />
+    <meta property="og:title"content="" />
+    <meta property="og:description"content="" />
+    <meta property="og:image"content="" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Services</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="header-div">
+                <a class="logo" href="http://127.0.0.1:5500/index.html">int.</a>
+                <nav class="nav-div">
+                    <ul class="nav-ul">
+                        <li>
+                            <a class="li-a" href="http://127.0.0.1:5500/index.html">Main</a>
+                        </li>
+                        <li>
+                            <a class="li-a active-page" href="http://127.0.0.1:5500/text.html#">Services</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="servicesdiv" id="service">
+            <p class="servicep"id="p">add new services</p>
+        </div>
+        <div class="divwraper" id="wraper-block">
+            <div class="wrapp">
+                <div class="wraperblock" id="wraper">
+                    <div class="service-div">
+                        <h4 class="servicetitle">The rooftop has pinstriped furnishings</h4>
+                        <p class="servicedescr">Esme Hotel isn't the only interior that references the opulence of Miami's past. American designer Ken Fulk styled The Goodtime Hotel to reflect the art deco architecture of the area.</p>
+                    </div>
+                    <img class="designimg" src="images/jj.jpg" alt="interior design">
+                </div>
+                <button id="del-button" class="deletebutton" type="button">delete post</button>
+            </div>
+
+            <div id="wrapp" class="wrapp">
+                <div class="wraperblock" id="wraper2">
+                    <div class="service-div">
+                        <h4 class="servicetitle">Clashing patterns feature throughout the hotel</h4>
+                        <p class="servicedescr">After passing through the lobby, visitors can sip cocktails or sample Latin-inspired dishes at El Salón, a cocktail bar inside the Esme Hotel.</p>
+                    </div>
+                    <img class="designimg" src="images/l.jpg" alt="interior design">
+                </div>
+                <button id="del-button2" class="deletebutton" type="button">delete post</button>    
+            </div>
+        </div>
+        <div class="formdiv none " id="form-id">
+            <div class="service-block">
+                <h4 class="service-title">Create new service</h4>
+                <div class="close" id="close-id"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="line-div"></div>
+            <form class="form" action="#" method="POST">
+                <div class="file-block">
+                    <label class="t-label" for="title">Title<span>*</span></label>
+                    <input class="titleinput" type="text" id="title" name="title" placeholder="Post title">
+                    <span class="errorspan" id="error-title"></span>
+                    <label class="t-label" for="descr">Post description<span>*</span></label>
+                    <textarea class="textarea" id="textarea" placeholder="descrption" name="text"></textarea>
+                    <span class="errorspan" id="error-text"></span>
+                    <label class="t-label" for="avatar">Image<span>*</span></label>
+                    <input class="file" type="file" src="/path-to/stop.png"width="25" height="25" id="avatar" name="avatar"accept="image/png">
+                    <div class="buttons">
+                        <button class="button-close" id="close-button" type="button">Close</button>
+                        <button class="file-block button" id="button-id" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        
+    </section>
+    <section>
+        
+    </section>
+    
+    <footer class="footer-div">
+        <div class="footerdiv1">
+            <div class="divblock-p">
+                <h4 class="divblock-p1">int.</h4>
+                <p class="divblock-p2">Our hotel is an image of quality and profesionalism combined with hard work and precision. You can expect only the best services from our staff.</p>
+            </div>
+            <div class="divblock">
+                <p class="footerp">Contact info</p>
+                <div class="uldiv">
+                    <ul>
+                        <li class="footerli">
+                            <i class="fa-solid fa-envelope"></i>
+                        </li>
+                        
+                        <li class="footerli">
+                            <i class="fa-solid fa-phone"></i>
+                        </li>
+                        <li class="footerli">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="ulli">
+                            <a class="li-a" href = "mailto: abc@example.com">example.gmail.com</a>
+                        </li>
+                        <li class="ulli">
+                            <a class="li-a" href="tel:123-456-7890p123">+0 320 422 4254</a>
+                        </li>
+                        <li class="ulli">
+                            <a class="li-a" href="https://goo.gl/maps/V7fR7uwrypKsQGYX9">Main Str Chicago Ilinois</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="linediv"></div>
+        <div class="social-divblock">
+            <div class="social-div fb">
+                <a class="a-social" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <div class="social-div youtube">
+               <a class="a-social" href="https://www.youtube.com/"> <i class="fa-brands fa-youtube a-social"></i></a>
+            </div>
+            <div class="social-div twit">
+               <a class="a-social" href="https://twitter.com/?lang=en"> <i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="social-div a-social google">
+                <a class="a-social" href="https://www.google.ge/webhp?tab=mw"><i class="fa-brands fa-google"></i></a>
+            </div>
+            <div class="social-div pint">
+                <a class="a-social" href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+            <div class="social-div linkedin">
+                <a class="a-social" href="https://www.linkedin.com/posts/scottdresden_next-generation-silent-drone-achieves-major-activity-6885948728314736640-eH9i"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="copdiv">
+            <p class="copp">© 2022 www.int.com</p>
+        </div>
+    </footer>
+    <script src="text.js"></script>
+</body>
+</html>
