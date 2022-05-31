@@ -20,20 +20,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div>
-            <div class="header-div">
-                <a class="logo" href="http://127.0.0.1:5500/index.html">int.</a>
-                <nav class="nav-div">
-                    <ul class="nav-ul">
-                        <li>
-                            <a class="li-a" href="http://127.0.0.1:5500/index.html">Main</a>
-                        </li>
-                        <li>
-                            <a class="li-a active-page" href="http://127.0.0.1:5500/text.html#">Services</a>
-                        </li>
-                    </ul>
-                </nav>
+    <header class="header">
+        <div class="header-div sticky" id="headerdiv">
+            <a class="logo" href="http://127.0.0.1:5500/index.html">int.</a>
+            <nav class="nav-div" id="navigation">
+               <ul class="nav-ul">
+                  <li class="ul-li">
+                      <a class="lia" href="http://127.0.0.1:5500/index.html#">Main</a>
+                  </li>
+                  <li class="ul-li">
+                      <a class="lia active-page" href="http://127.0.0.1:5500/text.html#">Services</a>
+                  </li>
+               </ul>
+            </nav>
+        </div>
+        <div class="burgerdiv" id="burger-div">
+            <div class="burger">
+
+            </div>
+            <div class="burger">
+
+            </div>
+            <div class="burger">
+
             </div>
         </div>
     </header>
@@ -52,7 +61,6 @@
                 </div>
                 <button id="del-button" class="deletebutton" type="button">delete post</button>
             </div>
-
             <div id="wrapp" class="wrapp">
                 <div class="wraperblock" id="wraper2">
                     <div class="service-div">
@@ -79,7 +87,7 @@
                     <textarea class="textarea" id="textarea" placeholder="descrption" name="text"></textarea>
                     <span class="errorspan" id="error-text"></span>
                     <label class="t-label" for="avatar">Image<span>*</span></label>
-                    <input class="file" type="file" src="/path-to/stop.png"width="25" height="25" id="avatar" name="avatar"accept="image/png">
+                    <input class="file" type="file" src="/path-to/stop.png"width="25" height="25" id="avatar" name="avatar"accept="image/png" onchange="return checkAndFilterFiles()">
                     <div class="buttons">
                         <button class="button-close" id="close-button" type="button">Close</button>
                         <button class="file-block button" id="button-id" type="submit">Submit</button>
@@ -87,13 +95,9 @@
                 </div>
             </form>
         </div>
-        
-        
     </section>
     <section>
-        
     </section>
-    
     <footer class="footer-div">
         <div class="footerdiv1">
             <div class="divblock-p">
@@ -155,5 +159,6 @@
         </div>
     </footer>
     <script src="text.js"></script>
+    <script src="burger.js"></script>
 </body>
 </html>

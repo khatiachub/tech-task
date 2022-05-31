@@ -11,6 +11,43 @@
         justify-content: center;
         align-items: center;
     }
+    .burgerdiv{
+        display: block;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-div{
+        transform:translateY(-160%);
+        transition: transform 1s;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0 0 20px 22px rgb(129, 128, 128);
+    }
+    
+    .d-block{
+        transform:translateY(10px);
+        transition: transform 1s;
+    }
+    .header-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ul-li{
+        margin-top: 25px;
+        height: 26px;
+    }
+    .nav-ul{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+        /* transform: translateY(30%); */
+        transition: transform 1s ease;
+    }
+    .logo{
+        margin-right: 40px;
+    }
 }
 @media(max-width:800px){
     .formdiv{
@@ -49,16 +86,17 @@
         max-width: 260px;
         width: 100%;
         flex-direction: column;
-        height: auto;
+        height: 300px;
         align-items: center;
         justify-content: center;
-        padding: 15px;
+        padding: 15px 0px 25px 0px;
     }
     .service-div{
         width: 180px;
     }
     .overlay{
         padding: 10px 0px 10px 0px;
+        width: 300px;
     }
     .descr{
         margin-left: 10px;
@@ -69,7 +107,8 @@
     }
     .tittle{
         margin-left: 10px;
-        width: 250px;
+        width: 270px;
+        /* text-align: center; */
     }
     .formdiv{
         left: 50%;
@@ -89,6 +128,16 @@
         max-width: 270px;
         width: 100%;
     }
-    
-    
+    .servicesdiv{
+        margin-top: 35%;
+    }
+    .postdiv{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 20px;
+    }
+    .descr{
+        width: 200px;
+    }
 }

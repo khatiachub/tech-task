@@ -4,6 +4,7 @@
     background-size: cover;
     width: 100%;
     height: 500px;
+    background-position: center;
 }
 .header-div{
     display: flex;
@@ -20,15 +21,50 @@
 }
 .logo{
     font-size: 60px;
-    color:white ;
-    margin-left: 10px;
+    color:rgb(255, 255, 255) ;
+    margin-left: 30px;
     font-family: 'Titillium Web', sans-serif;
 }
 .li-a{
     margin-right: 40px;
-    color: #eeeee4;
+    color: #fdfbfb;
     font-family: 'Titillium Web', sans-serif;
     font-size: 15px;
+}
+.lia{
+    margin-right: 40px;
+    color: #fdfbfb;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+/* burger */
+.header{
+    position: relative;
+}
+.burgerdiv{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 5;
+    display: none;
+    width: 25px;
+}
+.burgerdiv.active .burger:nth-child(1){
+    transform:translateY(7px) rotate(45deg) ;
+}
+.burgerdiv.active .burger:nth-child(2){
+    opacity: 0;
+}
+.burgerdiv.active .burger:nth-child(3){
+    transform:translateY(-7px) rotate(-45deg);
+}
+.burger{
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 5px;
+    transition: 0.7s linear;
+    display: none;
 }
 
 /* footer */
@@ -177,6 +213,7 @@
     color:#393B3A;
     font-style: italic;
     width: 200px;
+    word-break: break-all;
 }
 .servicedescr{
     width: 200px;
@@ -203,24 +240,25 @@
     max-width: 400px;
     width: 100%;
     height: 200px;
-    box-shadow: 5px 5px 3px #d8d8d8;
+    box-shadow: 5px 5px 3px #c2c2c2;
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
     opacity: 80%;
     transition: all 0.4s;
-    
+    background-color: #ced0d3;
 }
 .wrapp{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 400px;
+    width: 100%;
 }
 .wraperblock:hover{
     opacity: 100%;
 }
 .deletebutton{
-    max-width: 400px;
     width: 150px;
     height: 30px;
     border: solid 1px #d8d8d8;
@@ -231,16 +269,12 @@
     background-color:#000000 ;
     color: #fff;
 }
-.wraper-block{
-    max-width: 400px;
-    width: 100%;
-}
 .servicesdiv{
     width: 200px;
     height: 50px;
     border-radius: 2px;
     background-color:#000000;
-    margin-top: 50px;
+    margin-top: 20%;
     margin-left: 20px;
     display: flex;
     justify-content: center;
@@ -387,7 +421,6 @@
 /* banner */
 .slider{
     position: relative;
-    
 }
 .arrow{
     position: absolute;
@@ -432,21 +465,12 @@
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: center;
+    background-clip: content-box;
+    background-position: center;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    animation-name:imganimation;
-    animation-duration: 4s;
-
 }
-
-@keyframes imganimation{
-    0%   {opacity:100%;}
-    50% {opacity: 70%;}
-    100% {opacity: 50%;}
-}
-
 /* posts */
 #wraperbox{
     max-width: 900px;
@@ -487,6 +511,11 @@
     right: 10px;
     font-size: 18px;
     font-weight: bolder;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 .overlay{
     position: absolute;
@@ -514,7 +543,7 @@
     width: 100%;
     height: 100px;
     background-color:#F0F3F4;
-    box-shadow: 5px 5px 3px #B3B6B7;
+    box-shadow: 5px 5px 3px #c3c3c4;
     border-radius: 5px;
     margin-top: 50px;
     transition: all 0.3s;
@@ -529,4 +558,21 @@
 span{
     color: red;
 }
+
+
+  body::-webkit-scrollbar {
+    width: 15px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(211, 208, 208);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(145, 145, 145);  /* creates padding around scroll thumb */
+  }
+  
+  
 

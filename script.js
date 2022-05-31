@@ -27,13 +27,14 @@ let data =[
   },
   {
     id:6,
-    img:'https://www.empirehousesd.com/wp-content/uploads/2021/02/FEAT_ID.jpg'
+    img:'http://images.summitmedia-digital.com/sap/images/2018/04/27/2018_0427_RL_Circulo_Verde_Main_Image.jpg'
   },
   {
     id:7,
-    img:'http://images.summitmedia-digital.com/sap/images/2018/04/27/2018_0427_RL_Circulo_Verde_Main_Image.jpg'
+    img:'https://www.empirehousesd.com/wp-content/uploads/2021/02/FEAT_ID.jpg'
   }
 ]
+
 
 let indexElement=0;
 
@@ -108,6 +109,7 @@ setInterval( () => {
 }, 3000)
 
 slider();
+
 
 
 

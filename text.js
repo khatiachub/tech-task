@@ -20,7 +20,6 @@ closebutt.addEventListener('click',function(){
 function servicePost(item){
   let wraperblock=document.createElement('div');
   wraperblock.classList.add('wraperblock');
-  wraperblock.classList.add('wraperrblock');
 
   let serviceDiv=document.createElement('div');
   serviceDiv.classList.add('service-div');
@@ -45,7 +44,7 @@ function servicePost(item){
   buttonDel.classList.add('deletebutton')
 
   let deleteBut=document.createElement('div');
-  deleteBut.classList.add('wraper-block')
+  deleteBut.classList.add('wrapp');
   
   serviceDiv.appendChild(h4Tag);
   serviceDiv.appendChild(pTag);
@@ -54,6 +53,7 @@ function servicePost(item){
   deleteBut.appendChild(wraperblock);
   deleteBut.appendChild(buttonDel);
   formWraper.appendChild(deleteBut);
+  
 
   buttonDel.addEventListener('click',function(){
     wraperblock.style.display='none';
@@ -73,13 +73,6 @@ delbutt2.addEventListener('click',function(){
   wrap2.style.display='none';
   delbutt2.style.display='none';
 });
-// for(var i=0; i<delbutt.length;i++){
-//   document.querySelectorAll('.deletebutton').addEventListener('click',function(){
-//     this.
-//   })
-
-// }
-
 
 form.addEventListener('submit', function(event) {
   event.preventDefault();
@@ -89,8 +82,6 @@ form.addEventListener('submit', function(event) {
     title:event.target[0].value,
     description:event.target[1].value,
     img:event.target[2].value,
-    
-
   }
   servicePost(data);
   if(data.title==''){
