@@ -97,6 +97,27 @@ form.addEventListener('submit', function(event) {
   }else if(data.description.length>100){
     errors.text='max-length of the description 100 symbols';
   }
+  
+  let files =data.img;
+    if (files.length > 0) {
+        let imgType = files.type;
+        let imgSize = files.size;
+
+        let maxFileSizeMb = 1000 * 1024;
+        let supportedFileTypes = ['image/png', 'image/jpg'];
+
+        if(!supportedFileTypes.includes(imgType)){
+            errors.avatar = 'Please select only jpg or png file';
+        }
+
+        if (imgSize > maxFileSizeMb) {
+            errors.avatar = 'Please select image size less than 1 mb';
+        }
+    }else{
+        errors.avatar = 'Please select image';
+    }
+    
+
   form.querySelectorAll('.errorspan').forEach(item=>{
     item.innerHTML='';
 });
@@ -111,7 +132,7 @@ form.addEventListener('submit', function(event) {
   });
 
 
-
+  
 
 
 

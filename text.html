@@ -18,6 +18,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/icon type">
+
 </head>
 <body>
     <header class="header">
@@ -87,7 +89,8 @@
                     <textarea class="textarea" id="textarea" placeholder="descrption" name="text"></textarea>
                     <span class="errorspan" id="error-text"></span>
                     <label class="t-label" for="avatar">Image<span>*</span></label>
-                    <input class="file" type="file" src="/path-to/stop.png"width="25" height="25" id="avatar" name="avatar"accept="image/png" onchange="return checkAndFilterFiles()">
+                    <input class="file" type="file" src="/path-to/stop.png"width="25" height="25" id="avatar" name="avatar"accept="image/png" >
+                    <span class="errorspan" id="error-avatar"></span>
                     <div class="buttons">
                         <button class="button-close" id="close-button" type="button">Close</button>
                         <button class="file-block button" id="button-id" type="submit">Submit</button>
