@@ -24,6 +24,9 @@
         background-color: rgb(0, 0, 0);
         box-shadow: 0 0 20px 22px rgb(129, 128, 128);
     }
+    .addclass{
+        margin-top: 130px;
+    }
     
     .d-block{
         transform:translateY(10px);
@@ -47,6 +50,9 @@
     }
     .logo{
         margin-right: 40px;
+    }
+    .activeline{
+        background-color: #fff;
     }
 }
 @media(max-width:800px){

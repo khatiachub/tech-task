@@ -449,9 +449,6 @@
     height: 7px;
     margin-left: 10px;
 }
-.activeline{
-    background-color: #fff;
-}
 .imgdiv{
     width: 100%;
     height: 600px;
@@ -462,6 +459,7 @@
     margin: 0 auto;
     margin-bottom: 50px;
 }
+
 /* posts */
 #wraperbox{
     max-width: 900px;
