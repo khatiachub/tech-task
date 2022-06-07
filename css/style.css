@@ -459,7 +459,9 @@
     margin: 0 auto;
     margin-bottom: 50px;
 }
-
+.activeline{
+    background-color: #fff;
+}
 /* posts */
 #wraperbox{
     max-width: 900px;
